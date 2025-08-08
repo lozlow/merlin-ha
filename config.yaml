@@ -1,0 +1,68 @@
+name: "BirdNET-Go"
+version: "0.6.4"
+slug: "birdnet_go"
+description: "Real-time bird sound identification and monitoring using BirdNET AI"
+url: "https://github.com/tphakala/birdnet-go"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: services
+init: false
+map:
+  - config:rw
+  - share:rw
+  - media:rw
+  - ssl:ro
+ports:
+  8080/tcp: 8080
+ports_description:
+  8080/tcp: "Web Interface"
+webui: "http://[HOST]:[PORT:8080]"
+options:
+  log_level: "info"
+  audio_device: "default"
+  confidence_threshold: 0.8
+  overlap: 0.0
+  sensitivity: 1.0
+  locale: "en"
+  birdweather_id: ""
+  latitude: 0.0
+  longitude: 0.0
+  database_type: "sqlite"
+  database_path: "/share/birdnet_go/detections.db"
+  clip_path: "/share/birdnet_go/clips"
+  log_path: "/share/birdnet_go/logs"
+  web_enabled: true
+  web_port: 8080
+  realtime_enabled: true
+  privacy_filter: false
+  night_filter: false
+  species_list_enabled: false
+  range_filter_enabled: false
+  prometheus_enabled: false
+  prometheus_port: 8090
+schema:
+  log_level: "list(trace|debug|info|warn|error|fatal|panic)"
+  audio_device: "str"
+  confidence_threshold: "float(0.1,1.0)"
+  overlap: "float(0.0,2.9)"
+  sensitivity: "float(0.0,1.5)"
+  locale: "str"
+  birdweather_id: "str?"
+  latitude: "float?"
+  longitude: "float?"
+  database_type: "list(sqlite|mysql)"
+  database_path: "str"
+  clip_path: "str"
+  log_path: "str"
+  web_enabled: "bool"
+  web_port: "port"
+  realtime_enabled: "bool"
+  privacy_filter: "bool"
+  night_filter: "bool"
+  species_list_enabled: "bool"
+  range_filter_enabled: "bool"
+  prometheus_enabled: "bool"
+  prometheus_port: "port"
+image: "ghcr.io/{arch}/addon-birdnet-go"

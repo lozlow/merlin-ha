@@ -1,0 +1,92 @@
+{
+  "configuration": {
+    "log_level": {
+      "name": "Log Level",
+      "description": "Set the logging verbosity level"
+    },
+    "audio_device": {
+      "name": "Audio Device",
+      "description": "Audio input device to use for bird sound detection"
+    },
+    "confidence_threshold": {
+      "name": "Confidence Threshold",
+      "description": "Minimum confidence level required for bird detections (0.1-1.0)"
+    },
+    "overlap": {
+      "name": "Analysis Overlap",
+      "description": "Analysis window overlap - higher values enable Deep Detection (0.0-2.9)"
+    },
+    "sensitivity": {
+      "name": "Detection Sensitivity",
+      "description": "Sensitivity of the detection algorithm (0.0-1.5)"
+    },
+    "locale": {
+      "name": "Language/Locale",
+      "description": "Language for bird species names"
+    },
+    "birdweather_id": {
+      "name": "BirdWeather Station ID",
+      "description": "Your BirdWeather.com station ID for uploading detections"
+    },
+    "latitude": {
+      "name": "Latitude",
+      "description": "Geographic latitude for location-based features"
+    },
+    "longitude": {
+      "name": "Longitude",
+      "description": "Geographic longitude for location-based features"
+    },
+    "database_type": {
+      "name": "Database Type",
+      "description": "Type of database to use for storing detections"
+    },
+    "database_path": {
+      "name": "Database Path",
+      "description": "File path for SQLite database storage"
+    },
+    "clip_path": {
+      "name": "Audio Clips Path",
+      "description": "Directory path for storing audio clip recordings"
+    },
+    "log_path": {
+      "name": "Log Files Path",
+      "description": "Directory path for application log files"
+    },
+    "web_enabled": {
+      "name": "Enable Web Interface",
+      "description": "Enable the web-based user interface"
+    },
+    "web_port": {
+      "name": "Web Interface Port",
+      "description": "Port number for the web interface"
+    },
+    "realtime_enabled": {
+      "name": "Enable Realtime Analysis",
+      "description": "Enable continuous real-time audio analysis"
+    },
+    "privacy_filter": {
+      "name": "Privacy Filter",
+      "description": "Filter out non-bird sounds for privacy"
+    },
+    "night_filter": {
+      "name": "Night Filter",
+      "description": "Filter detections during nighttime hours"
+    },
+    "species_list_enabled": {
+      "name": "Enable Species List",
+      "description": "Use a custom species list for filtering"
+    },
+    "range_filter_enabled": {
+      "name": "Enable Range Filter",
+      "description": "Filter species based on geographic range"
+    },
+    "prometheus_enabled": {
+      "name": "Enable Prometheus Metrics",
+      "description": "Enable Prometheus metrics endpoint"
+    },
+    "prometheus_port": {
+      "name": "Prometheus Port",
+      "description": "Port number for Prometheus metrics endpoint"
+    }
+  }
+}

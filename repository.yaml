@@ -1,0 +1,57 @@
+# Repository Information
+
+name: "Home Assistant Add-on: BirdNET-Go"
+url: "https://github.com/yourusername/addon-birdnet-go"
+maintainer: "Your Name"
+
+# Add-on Information
+slug: "birdnet_go"
+version: "0.6.4"
+upstream_version: "0.6.4"
+upstream_url: "https://github.com/tphakala/birdnet-go"
+
+# Supported Architectures
+architectures:
+  - amd64
+  - aarch64
+  - armv7
+
+# Home Assistant Requirements
+homeassistant: "2023.3.0"
+
+# Add-on Categories
+categories:
+  - "automation"
+  - "monitoring"
+  - "multimedia"
+
+# Keywords
+keywords:
+  - "birdnet"
+  - "bird identification"
+  - "audio analysis"
+  - "ai"
+  - "tensorflow"
+  - "wildlife monitoring"
+  - "bioacoustics"
+
+# License
+license: "CC-BY-NC-SA-4.0"
+
+# Dependencies
+dependencies:
+  - "Audio support in Home Assistant"
+  - "Storage space for database and audio clips"
+
+# Resource Requirements
+resources:
+  cpu: "Medium"
+  memory: "512MB+"
+  storage: "1GB+ for clips and database"
+
+# Hardware Requirements
+hardware:
+  - "Audio input device (microphone, audio interface)"
+  - "64-bit system (ARM64 or x86_64)"
+  - "Minimum 1GB RAM"
+  - "Network connectivity (optional, for BirdWeather integration)"

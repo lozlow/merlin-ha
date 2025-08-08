@@ -1,0 +1,17 @@
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base:3.20"
+  amd64: "ghcr.io/home-assistant/amd64-base:3.20"
+  armv7: "ghcr.io/home-assistant/armv7-base:3.20"
+labels:
+  io.hass.name: "BirdNET-Go"
+  io.hass.description: "Real-time bird sound identification and monitoring using BirdNET AI"
+  io.hass.arch: "aarch64|amd64|armv7"
+  io.hass.type: "addon"
+  io.hass.version: "0.6.4"
+  maintainer: "Your Name <your.email@example.com>"
+  org.opencontainers.image.title: "Home Assistant Add-on: BirdNET-Go"
+  org.opencontainers.image.description: "Real-time bird sound identification and monitoring using BirdNET AI"
+  org.opencontainers.image.source: "https://github.com/yourusername/addon-birdnet-go"
+  org.opencontainers.image.licenses: "CC-BY-NC-SA-4.0"
+args:
+  TARGETARCH: "{arch}"
